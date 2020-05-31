@@ -1,5 +1,16 @@
-var player = document.getElementById('player')
+const queryString = window.location.search;
+console.log(queryString);
 
-var id = location.search.split('?')[1]
+const urlParams = new URLSearchParams(queryString);
 
-player.src = 'https://llk.github.io/scratch-gui/master#'+id
+const id = urlParams.get('id')
+
+const title = urlParams.get('title')
+
+const description = urlParams.get('description')
+
+document.getElementById('player').src = 'https://llk.github.io/scratch-gui/master/player#'+id
+
+document.getElementById('title').innerText = title
+
+document.getElementById('description').innerText = description
