@@ -6,11 +6,12 @@ iframe{
     display: block;       /* iframes are inline by default */
     background: rgb(255, 255, 255);
     width: 100%;
-    height: 60vh;
+    height: 80vh;
 }
 
 body{
     font-family: 'jost', monospace;
+    margin: 15px;
 }
 
 hr{
