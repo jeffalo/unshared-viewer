@@ -1,0 +1,12 @@
+iframe{
+    overflow:hidden;
+    border: none;
+    display: block;       /* iframes are inline by default */
+    background: rgb(0, 174, 255);
+    height: 100vh;        /* Viewport-relative units */
+    width: 100vw;
+}
+
+body{
+    margin: 0;
+}
